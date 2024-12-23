@@ -3,18 +3,19 @@
 # dependencies
 /frontend/node_modules
 /frontend/.pnp
-/frontend.pnp.*
-/frontend.yarn/*
-/frontend!.yarn/patches
-/frontend!.yarn/plugins
-/frontend!.yarn/releases
-/frontend!.yarn/versions
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
 # testing
 /frontend/coverage
 
 /backend/node_modules
 /backend/package-lock.json
+/backend/config/config.env
 
 # next.js
 /frontend/.next/
