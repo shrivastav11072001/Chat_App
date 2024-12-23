@@ -15,7 +15,7 @@ const useSignup = () => {
 
     setLoading(true);
     try {
-      const response=await axios.post("http://localhost:5000/auth/signup",{fullName,username,password,confirmPassword,gender});
+      const response=await axios.post("https://chat-app-rgbm.vercel.app/auth/signup",{fullName,username,password,confirmPassword,gender});
 
       const data = await response.data;
       if(data.error){

@@ -31,7 +31,7 @@ export const SocketContextProvider = ({ children }) => {
   const {AuthData} = useContext(AuthContext);
   useEffect(() => {
     if (AuthData) {
-      const socketInstance = io("http://localhost:5000", {
+      const socketInstance = io("https://chat-app-rgbm.vercel.app/", {
         query: {
           userId: AuthData._id,
         },

@@ -13,7 +13,7 @@ const useLogout= ()=>{
     const logout= async()=>{
         setLoading(true);
         try {
-            const res = await axios.post("http://localhost:5000/auth/logout")
+            const res = await axios.post("https://chat-app-rgbm.vercel.app/auth/logout")
             const data = res.data;
             if(data.error){
                 throw new Error(data.error);
