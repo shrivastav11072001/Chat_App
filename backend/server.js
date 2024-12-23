@@ -16,6 +16,10 @@ app.use(express.json());
 
 connectDB();
 
+app.get("/",(req,res)=>{
+  res.send("Hello Backend")
+})
+
 app.use("/auth", authRoutes);
 app.use("/messages", messageRoutes);
 app.use("/users", userRoutes);
