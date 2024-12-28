@@ -8,7 +8,6 @@ const userRoutes = require("./routes/user.routes.js");
 const { connectDB } = require("./config/db.js");
 const { app, server } = require("./Socket/Socket.js");
 
-// const app = express(); 
 dotenv.config({ path: "./config/config.env" });
 
 app.use(cors());

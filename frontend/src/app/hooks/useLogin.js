@@ -16,7 +16,7 @@ const useLogin = () => {
         if(!success) return;
         setLoading(true);
         try {
-            const res=await axios.post("https://chat-app-rgbm.vercel.app/auth/login",{username,password});
+            const res=await axios.post("https://chat-app-zhmd.onrender.com/auth/login",{username,password});
             const data = await res.data;
             dispatch({
                 type:"LOGIN",
